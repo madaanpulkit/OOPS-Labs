@@ -272,32 +272,33 @@ class Lab5_AP
 						break;
 
 				}
-
-				int total = 0;
-
-				PrintWriter wr = new PrintWriter("answer.txt", "UTF-8");
-						
-				for(int j=0; j<students.size(); j++)
-				{
-					if(students.get(j) != null)
-					{
-						wr.print(j + 1);
-
-						ArrayList<Object> values = students.get(j).getList();
-
-						for(int k=0; k<values.size(); k++)
-						{
-							wr.print(" " + values.get(k));
-						}
-
-						wr.println();
-
-						total ++;
-					}
-				}
-
-				wr.println(n - total);
 			}
+
+			int total = 0;
+
+			PrintWriter wr = new PrintWriter("./src/answer.txt", "UTF-8");
+
+			for(int j=0; j<students.size(); j++)
+			{
+				if(students.get(j) != null)
+				{
+					wr.print(j + 1);
+
+					ArrayList<Object> values = students.get(j).getList();
+
+					for(int k=0; k<values.size(); k++)
+					{
+						wr.print(" " + values.get(k));
+					}
+
+					wr.println();
+
+					total ++;
+				}
+			}
+
+			wr.println(n - total);
+			
 		}
 
 		catch(IOException e)
