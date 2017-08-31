@@ -222,6 +222,8 @@ class Lab5_AP
 					case "String" :
 						Tree<String> tree2 = new Tree<String>(n);
 						
+						number = Reader.nextInt();
+						
 						for(int j=0; j<x; j++)
 						{
 							tree2.Insert(Reader.next());
@@ -246,6 +248,8 @@ class Lab5_AP
 
 					case "Float" :
 						Tree<Float> tree3 = new Tree<Float>(n);
+						
+						number = Reader.nextInt();
 						
 						for(int j=0; j<x; j++)
 						{
