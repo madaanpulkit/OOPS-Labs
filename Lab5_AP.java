@@ -302,6 +302,7 @@ class Lab5_AP
 			}
 
 			wr.println(n - total);
+			wr.close();
 			
 		}
 
